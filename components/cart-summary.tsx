@@ -24,7 +24,6 @@ export default function CartSummary() {
           <PriceArea
             total={cartTotalPrice}
             shipping={SHIPPING_PRICE}
-            cart={cart}
           />
         </>
       )}
@@ -90,15 +89,13 @@ const ItemsSummary = ({ cart }: { cart: CartItem[] }) => {
 const PriceArea = ({
   total,
   shipping,
-  cart,
 }: {
   total: number;
   shipping: number;
-  cart: CartItem[];
 }) => {
-  const vatPrice = useMemo(() => VAT_PERCENT_AMOUNT * total, [cart, total]);
+  const vatPrice = useMemo(() => VAT_PERCENT_AMOUNT * total, [total]);
 
-  const totalPrice = useMemo(() => total + SHIPPING_PRICE, [cart, total]);
+  const totalPrice = useMemo(() => total + SHIPPING_PRICE, [total]);
 
   return (
     <div className='flex flex-col gap-2'>

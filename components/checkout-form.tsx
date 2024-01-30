@@ -209,10 +209,10 @@ export default function CheckoutForm() {
                       <CashOnDeliveryIcon />
                     </div>
                     <p className='text-justify text-regular text-black opacity-50'>
-                      The 'Cash on Delivery' option enables you to pay in cash
-                      when our delivery courier arrives at your residence. Just
-                      make sure your address is correct so that your order will
-                      not be cancelled.
+                      The &apos;Cash on Delivery&apos; option enables you to pay
+                      in cash when our delivery courier arrives at your
+                      residence. Just make sure your address is correct so that
+                      your order will not be cancelled.
                     </p>
                   </div>
                 )}
