@@ -1,9 +1,11 @@
 import { Product } from '@/model/types';
 import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function getProduct(slug: string): Promise<Product | null> {
   try {
-    const file = await fs.readFile(process.cwd() + '/app/data.json', 'utf8');
+    const jsonDirectory = path.join(process.cwd());
+    const file = await fs.readFile(jsonDirectory + '/app/data.json', 'utf8');
     const response: Product[] = JSON.parse(file);
 
     const product = response.find((product) => product.slug === slug);
