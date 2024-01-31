@@ -38,14 +38,14 @@ const ResponsiveImage = ({ imgSizes }: { imgSizes: ImageSizes }) => {
       <Image
         src={imgSizes.tablet}
         alt='gallery-image'
-        height={280}
+        height={540}
         width={563}
         className='hidden h-full w-full rounded-lg object-cover sm:block lg:hidden'
       />
       <Image
         src={imgSizes.desktop}
         alt='gallery-image'
-        height={280}
+        height={840}
         width={560}
         className='hidden h-full w-full rounded-lg object-cover lg:block'
       />
