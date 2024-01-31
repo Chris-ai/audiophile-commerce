@@ -3,6 +3,7 @@ import Hero from '@/components/hero';
 import Wrapper from '@/components/wrapper';
 import CategoryList from '@/components/category-list';
 import Bestsellers from '@/components/bestsellers';
+import About from '@/components/about';
 
 export default function Home() {
   //TODO:: Instead of data.json use prisma and custom db
@@ -17,6 +18,7 @@ export default function Home() {
       <Wrapper>
         <CategoryList />
         <Bestsellers />
+        <About />
       </Wrapper>
     </>
   );

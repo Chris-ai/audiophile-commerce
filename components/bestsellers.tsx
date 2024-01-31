@@ -46,7 +46,7 @@ const Bestseller = ({ title, slug, desc }: ProductBestsellerProps) => {
           alt='product-image'
           width={320}
           height={320}
-          className='z-10 hidden h-[320px] w-[320px] scale-125 rounded-lg lg:block'
+          className='z-10 hidden h-[320px] w-[290px] scale-125 rounded-lg lg:block'
         />
         <Image
           src={'/home/desktop/pattern-circles.svg'}

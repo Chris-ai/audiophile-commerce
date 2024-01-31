@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function Hero({ title, desc, slug }: HeroProps) {
   return (
-    <div className='h-15 flex h-[75vh] max-h-[600px] flex-col items-center bg-[#191919] bg-hero-mobile bg-contain bg-center bg-no-repeat text-white sm:bg-hero-tablet lg:bg-hero-desktop'>
+    <div className='h-15 flex h-[80vh] max-h-[600px] flex-col items-center bg-[#191919] bg-hero-mobile bg-contain bg-center bg-no-repeat text-white sm:bg-hero-tablet lg:bg-hero-desktop'>
       <div className='flex h-full w-full flex-col items-center justify-center gap-10 px-6 lg:max-w-[1110px] lg:items-start'>
         <div className='flex flex-col gap-6 text-center uppercase lg:max-w-[380px] lg:text-start'>
           <p className='text-overline text-white opacity-50'>New Product</p>
